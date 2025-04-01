@@ -1,15 +1,8 @@
 from datetime import date
-
 from .cafe import Cafe
-from .errors import (
-    NotVaccinatedError,
-    VaccineError,
-    OutdatedVaccineError,
-    NotWearingMaskError,
-)
 
 
-def go_to_cafe(friends: str, cafe: Cafe)-> None:
+def go_to_cafe(friends: list[dict], cafe: Cafe) -> str:
     """
     Функція, яка перевіряє, чи можуть друзі піти в кафе.
     """
